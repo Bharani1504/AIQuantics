@@ -1,0 +1,56 @@
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #0f0f0f 0%, #0a0a0a 100%);
+  color: white;
+  padding: 80px 60px;
+  font-family: 'Poppins', sans-serif;
+  gap: 60px;
+}
+
+.imageContainer img {
+  width: 320px;
+  max-width: 100%;
+}
+
+.textContainer {
+  max-width: 600px;
+}
+
+.subheading {
+  color: #00ff88;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.description {
+  color: #cfcfcf;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background-color: #00ff88;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #00e67f;
+}

@@ -1,0 +1,130 @@
+.heroWrapper {
+  background-color: #161616;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #161616;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoCircle {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #00ff88;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.companyName {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.subtext {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background 0.2s ease;
+}
+
+.navLinks a.active,
+.navLinks a:hover {
+  background-color: #00ff88;
+  color: black;
+}
+
+.chatButton {
+  display: flex;
+  align-items: center;
+  background-color: #00ff88;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 50px;
+  position: relative;
+}
+
+.textBlock {
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.innovate {
+  font-size: 64px;
+  margin: 0;
+}
+
+.automate {
+  font-size: 64px;
+  margin: 0;
+  color: #00ff88;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.evolve {
+  font-size: 64px;
+  margin: 0;
+}
+
+.character {
+  height: 600px;
+  object-fit: contain;
+  z-index: 1;
+  position: relative;
+  margin-left: -100px;
+}
+
+.faqButton {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: #00ff88;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
