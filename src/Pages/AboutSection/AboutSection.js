@@ -1,8 +1,7 @@
-// File: components/About.jsx
-
 import React from "react";
-import "./AboutSection";
+import "./AboutSection.css";
 import AboutImage from "./shield.png"
+import vector from './vector(cropped).png';
 
 const AboutSection = () => {
   return (
@@ -24,6 +23,9 @@ const AboutSection = () => {
           Join us on a journey where technology meets creativity and innovation fuels growth.
         </p>
         <button className="about-button">Read More</button>
+      </div>
+      <div className="about-vector">
+        <img src={vector} alt="" />
       </div>
     </section>
   );
