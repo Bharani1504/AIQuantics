@@ -1,0 +1,132 @@
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logofull {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.25rem; */
+}
+
+.logopart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* .logopart img {
+  height: 36px;
+} */
+
+.companyName {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* line-height: 1.1; */
+}
+
+.logotext {
+  color: #aaa;
+  font-size: 0.6rem;
+}
+
+.navbarpart {
+  background-color: #2C2C2E;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.85rem;
+  position: fixed;
+  margin-left: 25%;
+}
+
+.navbarpart ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  background-color: #2C2C2E;
+}
+
+.navbarpart li {
+  position: relative;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  transition: background 0.3s;
+  background-color: #2C2C2E;
+}
+
+.navbarpart li.active {
+  color: #2C2C2E;
+  background-color: #3DDC81;
+}
+
+.navbarpart li:hover:not(.active) {
+  background-color: transparent;
+}
+
+.navbarpart li ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 140%;
+  left: 0;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px transparent(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.navbarpart li:hover ul {
+  display: flex;
+}
+
+.navbarpart li ul li {
+  padding: 0.4rem 0.8rem;
+  color: white;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.chatbotpart {
+  margin-left: 70%;
+  padding-left: 2rem;
+}
+
+.chatbotpart btn,
+.chatbotpart button {
+  background-color: #3DDC81;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chatbotpart .chatbotsvg{
+  background-color: transparent;
+  color: black;
+}

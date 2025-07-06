@@ -1,25 +1,22 @@
-// File: pages/Home.jsx
-
 import React from "react";
+import character from "./character.png";
+import { LuMessageCircle } from "react-icons/lu";
 import "./HeroSection.css";
-import HomeImage from './character.png';
 
-const Home = () => {
+const HeroSection = () => {
   return (
-    <div className="home-container">
-      <section className="hero-section">
-        <div className="hero-text">
-          <h1>INNOVATE</h1>
-          <h1 className="green-text">AUTOMATE</h1>
-          <h1>EVOLVE</h1>
-        </div>
-        <div className="hero-image">
-          <img src={HomeImage} alt="Hero Warrior" />
-        </div>
-        <button className="faq-button">FAQ</button>
-      </section>
-    </div>
+    <section className="hero-section">  
+      <div className="hero-text">
+        <h1>INNOVATE</h1>
+        <h1 ><span className="green-text">AUTOMATE</span></h1>
+        <h1>EVOLVE</h1>
+      </div>
+      <div className="hero-image">
+        <img src={character} alt="Hero Warrior" />
+      </div>
+      <button className="faq-button"><LuMessageCircle  className="faqsvg"/>FAQ</button>
+    </section>
   );
 };
 
-export default Home;
+export default HeroSection;
