@@ -1,7 +1,6 @@
-// File: components/Products.jsx
-
 import React from "react";
-// import "./ProductSection.css";
+import "./ProductSession.css";
+
 const productSection = [
   {
     icon: "/icon-face.svg",
