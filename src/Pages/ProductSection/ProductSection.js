@@ -1,51 +1,65 @@
 import React from "react";
-import "./ProductSession.css";
+import "./ProductSection.css";
+import vector1 from './VectorTop.png';
+import vector2 from './VectorBottom.png';
+
+import { IoFingerPrint } from "react-icons/io5";
+import { BsRobot } from "react-icons/bs";
+import { GrWindows } from "react-icons/gr";
+import { GiTeacher } from "react-icons/gi";
 
 const productSection = [
   {
-    icon: "/icon-face.svg",
+    icon: <IoFingerPrint />,
     title: "Facial Biometric Attendance Application",
     description: "Attendance Application – effortless, secure, and incredibly efficient!",
   },
   {
-    icon: "/icon-ziffy.svg",
+    icon: <BsRobot />,
     title: "Ziffy Cloud: Project Management Software for Agile Teams",
-    description:
-      "Streamline your projects with agile management that turns chaos into clarity!",
+    description: "Streamline your projects with agile management that turns chaos into clarity!",
   },
   {
-    icon: "/icon-vendor.svg",
+    icon: <GrWindows />,
     title: "Vendor and Asset Management Software",
-    description:
-      "Track and optimize all your assets & vendor relationships in one powerful platform!",
+    description: "Track and optimize all your assets & vendor relationships in one powerful platform!",
   },
   {
-    icon: "/icon-chatbot.svg",
+    icon: <GiTeacher />,
     title: "ChatGenius: Conversational AI based Chatbot",
-    description:
-      "Experience the future of customer service with intelligent, human-like conversations!",
+    description: "Experience the future of customer service with intelligent, human-like conversations!",
   },
 ];
 
-const ProductSection= () => {
+const ProductSection = () => {
   return (
-    <section className="product-section">
-      <p className="section-label">PRODUCT</p>
-      <h2 className="section-title">
-        Glimpse Of Our Few Game-Changing Products To Elevate Your Business To New Heights!
-      </h2>
-      <div className="product-grid">
-        {productSection.map((productSection, idx) => (
-          <div className="product-card" key={idx}>
-            <div className="product-icon">
-              <img src={productSection.icon} alt={productSection.title} />
-            </div>
-            <h3>{productSection.title}</h3>
-            <p>{productSection.description}</p>
-          </div>
-        ))}
+    <div className="productsection">
+      <div className="vectorpart">
+        <img src={vector1} alt=""/>
+        <img src={vector2} alt="" />
       </div>
-    </section>
+      <div className="textpart">
+          <div className="product-section">
+          <p className="section-label">PRODUCT</p>
+          <h2 className="section-title">
+            Glimpse Of Our Few Game-Changing Products To Elevate Your Business To New Heights!
+          </h2>
+          <div className="product-grid">
+            {productSection.map((item, idx) => (
+              <div className="product-card" key={idx}>
+                <div className="product-icon">
+                  {item.icon}
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
   );
 };
 
