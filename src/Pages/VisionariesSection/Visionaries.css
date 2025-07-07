@@ -1,0 +1,119 @@
+/* File: styles/Visionaries.css */
+
+.VisionariesText {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3ddc81;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.Visionaries {
+  position: relative;
+}
+
+.vectorpart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.vectorpart img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.VisionariesImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 0 2rem 4rem;
+  position: relative;
+  z-index: 1;
+  background-image: url('/src/Pages/VisionariesSection/CentreCircle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 600px;
+  background-color: transparent;
+}
+
+.top-layer,
+.bottom-layer {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.circle-divider {
+  width: 30px;
+  height: 30px;
+  background-color: #3ddc81;
+  border-radius: 50%;
+  margin: -1rem auto;
+  z-index: 3;
+  box-shadow: 0 0 60px 30px rgba(61, 220, 129, 0.15);
+  display: none;
+}
+
+.VisionariesImage::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(61, 220, 129, 0.12), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(40px);
+  display: none;
+}
+
+.VisionariesImage img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .VisionariesText {
+    font-size: 1.4rem;
+  }
+
+  .top-layer,
+  .bottom-layer {
+    gap: 1.5rem;
+  }
+
+  .VisionariesImage img {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-layer,
+  .bottom-layer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .VisionariesImage img {
+    max-width: 100%;
+  }
+}
